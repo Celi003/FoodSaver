@@ -1,7 +1,7 @@
 
 # Food Saver
 
-Ce dépôt contient l'implémentation front-end d'un prototype d'interface "Onboarding Flow Design" basé sur un design Figma.
+Ce dépôt contient l'implémentation front-end d'un prototype d'interface "Food Saver" basé sur un design Figma.
 
 Le design d'origine est disponible sur Figma : https://www.figma.com/design/MwikqlKaI2mXAZ7FRaJwXz/Onboarding-Flow-Design
 
