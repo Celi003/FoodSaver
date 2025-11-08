@@ -1,5 +1,5 @@
 
-# Onboarding Flow Design
+# Food Saver
 
 Ce dépôt contient l'implémentation front-end d'un prototype d'interface "Onboarding Flow Design" basé sur un design Figma.
 
