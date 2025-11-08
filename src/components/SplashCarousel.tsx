@@ -1,18 +1,23 @@
 import { useState, useEffect } from 'react';
 
+// Importing images so Vite handles asset hashing/paths in production
+import img1 from '@/assets/2148910391.jpg';
+import img2 from '@/assets/pexels-thgusstavo-30684081.jpg';
+import img3 from '@/assets/volunteer-collecting-donation-box-from-another-volunteer.jpg';
+
 const images = [
   {
-    url: 'src/assets/2148910391.jpg',
+    url: img1,
     // title: 'Food Saver : Le Don Alimentaire Local.',
     // desc: 'Connectez-vous pour sauver des repas et renforcer votre communauté en temps réel.'
   },
   {
-    url: 'src/assets/pexels-thgusstavo-30684081.jpg',
+    url: img2,
     // title: 'Partagez vos surplus !',
     // desc: 'Donnez ce que vous pouvez, recevez ce dont vous avez besoin.'
   },
   {
-    url: 'src/assets/volunteer-collecting-donation-box-from-another-volunteer.jpg',
+    url: img3,
     // title: 'Agissez pour la planète',
     // desc: 'Réduisez le gaspillage alimentaire et aidez votre quartier.'
   }

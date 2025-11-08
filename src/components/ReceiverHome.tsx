@@ -3,6 +3,12 @@ import { Search, Filter, MapPin, Clock, Euro } from 'lucide-react';
 import BottomNav from './BottomNav';
 import type { Donation } from '../App';
 import { Image } from 'lucide-react';
+// Import local images so Vite handles the correct paths in production
+import ebaImg from '@/assets/eba.jpeg';
+import rizImg from '@/assets/riz.jpeg';
+import ahImg from '@/assets/ah.jpeg';
+import tomatoesImg from '@/assets/3432.jpg';
+import mapPinsImg from '@/assets/from-pins-map.jpg';
 
 interface ReceiverHomeProps {
   onNavigate: (page: string, donation?: Donation) => void;
@@ -19,7 +25,7 @@ export default function ReceiverHome({ onNavigate, currentPage }: ReceiverHomePr
       description: 'Surplus de diner',
       type: '#Pâtisseries',
       quantity: '3 kg',
-      image: 'src/assets/eba.jpeg',
+  image: ebaImg,
       donor: {
         name: 'Boulangerie Martin',
         verified: true,
@@ -39,7 +45,7 @@ export default function ReceiverHome({ onNavigate, currentPage }: ReceiverHomePr
       description: '15 portions de lasagnes',
       type: '#PlatsCuisinés',
       quantity: '5 kg',
-      image: 'src/assets/riz.jpeg',
+  image: rizImg,
       donor: {
         name: 'Restaurant La Table',
         verified: true,
@@ -59,7 +65,7 @@ export default function ReceiverHome({ onNavigate, currentPage }: ReceiverHomePr
       description: '10 kg de fruits de saison',
       type: '#RepasChaud',
       quantity: '10 kg',
-      image: 'src/assets/ah.jpeg',
+  image: ahImg,
       donor: {
         name: 'Marché Bio',
         verified: true,
@@ -78,7 +84,7 @@ export default function ReceiverHome({ onNavigate, currentPage }: ReceiverHomePr
       description: 'Surplus de récolte de tomates bio',
       type: '#FruitsEtLégumes',
       quantity: '25 kg',
-      image: 'src/assets/3432.jpg',
+  image: tomatoesImg,
       donor: {
         name: 'Ferme Dupont',
         verified: true,
@@ -150,11 +156,11 @@ export default function ReceiverHome({ onNavigate, currentPage }: ReceiverHomePr
 
         {/* Map View */}
         <div className="w-full h-64 bg-gray-800 rounded-xl overflow-hidden border border-gray-700">
-          <img 
-            src="src/assets/from-pins-map.jpg"
-            alt="Carte des dons à proximité"
-            className="w-full h-full object-cover"
-          />
+            <img
+              src={mapPinsImg}
+              alt="Carte des dons à proximité"
+              className="w-full h-full object-cover"
+            />
         </div>
 
         {/* Urgency Filters */}
